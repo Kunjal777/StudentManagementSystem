@@ -1,0 +1,26 @@
+﻿
+# Visual Studio cache
+.vs/
+**/.vs/
+
+# Build output
+**/bin/
+**/obj/
+
+# Visual Studio user settings
+*.user
+*.suo
+
+# Debug and release output
+**/Debug/
+**/Release/
+
+# Logs
+*.log
+
+# Environment secrets
+.env
+.env.*
+
+# Publish output
+**/publish/

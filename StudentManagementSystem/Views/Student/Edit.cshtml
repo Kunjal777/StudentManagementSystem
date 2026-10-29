@@ -1,0 +1,43 @@
+﻿@model StudentManagementSystem.Models.Student
+
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<div class="container mt-4">
+    <h2>Edit Student</h2>
+
+    <form asp-controller="Student" asp-action="Edit" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Student Name</label>
+            <input asp-for="Name" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Roll_No" class="form-label">Roll Number</label>
+            <input asp-for="Roll_No" type="number" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DOB" class="form-label">Date of Birth</label>
+            <input asp-for="DOB" type="date"
+                   value="@Model.DOB.ToString("yyyy-MM-dd")"
+                   class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Gender" class="form-label">Gender</label>
+            <select asp-for="Gender" class="form-select" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Student</button>
+        <a asp-controller="Student" asp-action="Index"
+           class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

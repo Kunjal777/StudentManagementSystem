@@ -1,0 +1,120 @@
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #1e293b;
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-navbar {
+    background: linear-gradient(110deg, #173b70, #2563a6);
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.2px;
+}
+
+.brand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #1d4ed8;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.app-navbar .nav-link {
+    color: #eaf2ff;
+    margin: 0 8px;
+}
+
+    .app-navbar .nav-link:hover {
+        color: #ffffff;
+    }
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3 {
+    color: #173b70;
+    font-weight: 700;
+}
+
+.card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.form-control,
+.form-select {
+    min-height: 44px;
+    border-radius: 8px;
+    border-color: #d5deea;
+}
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 9px 16px;
+}
+
+.btn-primary {
+    background-color: #2563a6;
+    border-color: #2563a6;
+}
+
+    .btn-primary:hover {
+        background-color: #173b70;
+        border-color: #173b70;
+    }
+
+.table {
+    background-color: #ffffff;
+    vertical-align: middle;
+}
+
+    .table thead th {
+        background-color: #173b70;
+        color: #ffffff;
+        padding: 14px;
+        white-space: nowrap;
+    }
+
+    .table tbody td {
+        padding: 12px 14px;
+    }
+
+    .table tbody tr:hover {
+        background-color: #f1f6fd;
+    }
+
+.app-footer {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+}
